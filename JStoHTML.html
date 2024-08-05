@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <script>
+            function get(){
+                var x="hello Aravind welcome to world";
+                document.getElementById("akki").innerHTML=x;
+            }
+            function get(){
+                var x="my name is aravind moluguri";
+                document.getElementById("abc").textContent=x;
+            }
+            function get(){
+                var x="Aravind "
+                var y="moluguri"
+                var z=x+y
+                document.getElementById("sam").value=z;
+            }
+            function get1(){
+                var a = document.createElement("h4");
+                a.textContent = "I am a new student";
+                document.getElementById("akhil").appendChild(a);
+            }
+            function get(){
+                var x = "Aravind Goud";
+                document.getElementById("mno").innerHTML = `<h1>${x}</h1>`;
+            }
+
+        </script>
+    </head>
+    <body>
+        <h1>METHOD-1</h1>
+        <h3 id="akki"></h3>
+        <button onclick="get()">
+            get
+        </button>
+        <h1>METHOD-2</h1>
+        <h3 id="abc"></h3>
+        <button onclick="get()">
+            get
+        </button>
+        <br>
+        <br>
+        <h1>METHOD-3</h1>
+        <input type="text" id="sam" value="valid name">
+        <button onclick="get()">
+            get
+        </button>
+        <br>
+        <br>
+        <h1>METHOD-4</h1>
+        <div id="akhil">
+            <h1>Welcome...... !</h1>
+        </div>
+        <button onclick="get1()">get</button>
+        <br>
+        <br>
+        <h1>METHOD-5</h1>
+        <div id="mno">
+            <p>I am an young man </p>
+        </div>
+        <button onclick="get()">get</button>
+
+    </body>
+</html>
